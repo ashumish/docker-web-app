@@ -15,9 +15,16 @@ pipeline {
             }
         }
 
+        stage('Stop Old Container') {
+            steps {
+                sh 'docker stop myapp-container || true'
+                sh 'docker rm myapp-container || true'
+            }
+        }
+
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 3000:3000 myapp-image'
+                sh 'docker run -d -p 3000:3000 --name myapp-container myapp-image'
             }
         }
 

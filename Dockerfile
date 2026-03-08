@@ -1,20 +1,20 @@
 # Use official Node image
 FROM node:18
 
-# Create working directory
+# Set working directory
 WORKDIR /app
 
-# Copy package.json first
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy application files
+# Copy remaining application code
 COPY . .
 
-# Expose application port
+# Expose port
 EXPOSE 3000
 
-# Start application
+# Start React app
 CMD ["npm", "start"]

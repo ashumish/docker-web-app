@@ -10,7 +10,7 @@ function App() {
           alt="Docker logo"
         />
         <p>Welcome to Docker..!</p>
-        <a className="App-link">Learn React</a>
+        <a className="App-link">Learn Docker</a>
       </header>
     </div>
   );

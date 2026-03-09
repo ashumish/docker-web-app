@@ -13,6 +13,9 @@ RUN npm install
 # Copy remaining application code
 COPY . .
 
+# Set environment variable so React listens on all interfaces
+ENV HOST=0.0.0.0
+
 # Expose port
 EXPOSE 3000
 

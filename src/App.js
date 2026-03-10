@@ -5,12 +5,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img
-          src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"
-          alt="Docker logo"
-        />
-        <p>Welcome to Docker..!</p>
-        <a className="App-link">Learn Docker</a>
+       <img
+  src="https://cdn.worldvectorlogo.com/logos/ansible.svg"
+  alt="Ansible logo"
+   width="120"
+/>
+        <p>Welcome to Ansible..!</p>
+        <a className="App-link">Learn Ansible</a>
       </header>
     </div>
   );
